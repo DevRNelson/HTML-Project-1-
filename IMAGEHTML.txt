@@ -1,0 +1,14 @@
+       <section id="SEC3">
+            <h3>OUR WORK</h3>
+            <P>A collection of cars we've renovated with passion</P>
+
+            <div class="row">
+                <div class="column">
+                    <img src="/IMAGES/CAR1.jpg" alt="" srcset="">
+                    <img src="/IMAGES/CAR2.jpg" alt="" srcset="">
+                    <img src="/IMAGES/CAR3.jpg" alt="" srcset="">
+                    <img src="/IMAGES/CAR4.jpg" alt="" srcset="">
+                    <img src="/IMAGES/CAR5.jpg" alt="" srcset="">
+                    <img src="/IMAGES/CAR6.jpg" alt="" srcset="">
+            </div>
+        </section>
