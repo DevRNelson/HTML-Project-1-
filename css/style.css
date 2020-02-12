@@ -42,6 +42,7 @@ html {
 
 #secsub1 {
     padding-top: 220px;
+    font-size: 2.5rem;
 }
 
 
@@ -54,6 +55,7 @@ html {
     background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(/IMAGES/leather.jpg);
     color: white;
     height: 500px;
+    background-position: center;
 }
 
 #sec2 h2{
@@ -87,8 +89,29 @@ html {
 }
 
 
+#aboutus h2 {
+    margin-top: 50px;
+}
+
 #aboutus {
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(/IMAGES/CAR3.jpg);
+    background-position: center;
+    height: 300px;
+    color: white;
+}
+
+#aboutus p{
+    font-size: 1.5rem;
+}
+
+#findus {
+    background-color: #757575;
+}
+
+
+footer {
+    background-color: #363636;
 }
