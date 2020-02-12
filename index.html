@@ -4,11 +4,12 @@
     <meta charset = UTF-8> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/5ded6b928e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <title>Vintage Car Site</title>
 </head>
 <body>
-    <div> 
+    <div class="topnav"> 
         <ul>
             <a href="index.html">HOME</a>
             <a href="/HTML/services.html">SERVICES</a>
@@ -19,7 +20,8 @@
         </ul>
     </div>
     <main>
-        <section id="SEC1"> 
+        <section id="sec1"> 
+            <div id= "secsub1">
             <h1>JOHN & JOHNNY</h1>
             <P>VINTAGE CAR SPECIALIST</P>
 
@@ -28,44 +30,61 @@
                 <a href="https://www.pinterest.com"><i class="fab fa-instagram-square"></i></a>
                 <a href="https://www.instagram.com"><i class="fab fa-pinterest-square"></i></a>
             </ul>
+            </div>
         </section>
 
-        <section id="SEC2">
+        <section id="sec2">
             <div>
                 <h2><a href="/HTML/services.html">SERVICES</a></h2>
 
-                <div>
+             <div id="secgrid2">   
+                <div id="sec2grid">
                     <h4>REPAIRS</h4>
                     <P>We do General Repairs, Specialist Repairs & Vintage Parts</P>
                 </div>
 
-                <div>
+                <div id="sec2grid">
                     <h4>UPHOLSTERY</h4>
                     <P>A Range of Fabrics, Including Vintage Leathers, & Wide Variety of Colors</P>
                 </div>
 
-                <div>
+                <div id="sec2grid">
                     <h4>PAINTWORK</h4>
                     <P>Spray paint, Custom Stencilling & Variety of Custom Made Artwork</P>
                 </div>
+            </div>               
             </div>
         </section>
 
-        <section id="SEC3">
-            <h3>OUR WORK</h3>
-            <P>A collection of cars we've renovated with passion</P>
-
-            <div class="row">
-                <div class="column">
-                    <img src="/IMAGES/CAR1.jpg" alt="" srcset="">
-                    <img src="/IMAGES/CAR2.jpg" alt="" srcset="">
-                    <img src="/IMAGES/CAR3.jpg" alt="" srcset="">
-                    <img src="/IMAGES/CAR4.jpg" alt="" srcset="">
-                    <img src="/IMAGES/CAR5.jpg" alt="" srcset="">
-                    <img src="/IMAGES/CAR6.jpg" alt="" srcset="">
-            </div>
+        <section id="aboutus">
+            <h2>ABOUT US</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis expedita ex dolorem. At consequatur debitis eum repellendus iste dolores ipsa ratione vero! Quod rem nam praesentium doloremque vero nisi sit.</p>
         </section>
 
+        
+        <section>
+            <H2>FIND US</H2>
+            <div id="grid2">
+                <p>500 Terry Francois Street San Francisco, CA 94158</p>
+                <p>info@mysite.com</p>
+                <p>Tel: 123-456-7890</p>
+
+                <p>OPENING HOURS:</p>
+                <p> Mon - Fri: 7am - 10pm
+                    ​​Saturday: 8am - 10pm                   
+                    ​Sunday: 8am - 11pm</p>
+            </div>       
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="socialfoot">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-pinterest-square"></i>
+        </div>
+        <p>© 2023 by JOHN & JOHNNY</p>
+    </footer>
 </body>
 </html>

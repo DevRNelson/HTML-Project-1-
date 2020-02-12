@@ -3,21 +3,92 @@
     padding: 0;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  /* Create two equal columns that sits next to each other */
-  .column {
-    flex: 50%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    height: 40px;
-    width: 50px;
-  }
+html {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+.topnav {
+    position: fixed;
+    background-color: #363636;
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+}
+
+.topnav a :hover {
+    color: #a5a5a5;
+}
+
+#sec1 {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),  url(/IMAGES/ModelTBackground.jpg);
+    height: 600px;
+    background-position: center;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    
+}
+
+#secsub1 {
+    padding-top: 220px;
+}
+
+
+#secsub1 a {
+    color: rgb(228, 228, 228);
+}
+
+
+#sec2 {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(/IMAGES/leather.jpg);
+    color: white;
+    height: 500px;
+}
+
+#sec2 h2{
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+
+#secgrid2 {
+    display:grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    margin: 0 auto;
+    width: 100%;
+    grid-gap: 5px;
+    height: calc(400px - 10px);
+    text-align: center;
+}
+
+#sec2 h4,p {
+    font-size: 1.2rem;
+}
+
+
+#sec2 a {
+    color: white; 
+    text-decoration: none;
+}
+
+#sec2 h2 {
+    text-align: center;
+}
+
+
+#aboutus {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
