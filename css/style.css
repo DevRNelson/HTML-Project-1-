@@ -88,6 +88,74 @@ html {
     text-align: center;
 }
 
+/* OUR WORK SECTION */
+
+.ourwork {
+    text-align: center;
+}
+
+.ourwork h2{
+    border-bottom: 1px;
+    margin-top: 5vh;
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+.ourwork p{
+    padding-bottom: 5vh;
+}
+
+#row {
+    display:grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 100%;
+    height: calc(400px - 10px);
+    text-align: center; 
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10vh;
+  }
+  
+
+  .column {
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 0px;
+    margin-bottom: 10vh;
+  }
+  
+  .column img {
+    margin-top: 0px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+/* OUR WORK SECTION END */
+
+
+/* ABOUT US SECTION  1 */ 
 
 #aboutus h2 {
     margin-top: 50px;
@@ -107,6 +175,51 @@ html {
     font-size: 1.5rem;
 }
 
+
+/* ABOUT US SECRTION 1 END */
+
+
+
+/* ABOUT US SECTION 2 */
+
+#us h2 {
+    margin-top: 50px;
+    color: black;
+}
+
+#us {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(/IMAGES/paper.jpg);
+    background-position: center;
+    height: 50rem;
+    color: white;
+}
+
+#us p{
+    font-size: 1.4rem;
+    margin-bottom: 5vh;
+    color: black;
+    text-align: center;
+    padding: 10vh;
+}
+
+#usbox {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    margin-left: 40vh;
+    margin-right: 40vh;
+}
+
+
+
+/* ABOUT US SECTION 2 */
+
+
 #findus {
     background-color: #757575;
 }
@@ -115,3 +228,4 @@ html {
 footer {
     background-color: #363636;
 }
+
