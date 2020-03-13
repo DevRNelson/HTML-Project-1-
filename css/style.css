@@ -30,6 +30,12 @@ html {
     color: #a5a5a5;
 }
 
+@media only screen and (max-width: 667px) {
+    #topnav{
+        height: px;
+    }
+}
+
 #sec1 {
     background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),  url(/IMAGES/ModelTBackground.jpg);
     height: 600px;
@@ -38,6 +44,12 @@ html {
     font-size: 2rem;
     text-align: center;
     
+}
+
+@media only screen and (max-width: 667px) {
+  #sec1 {
+      height: 500px;
+  }    
 }
 
 #secsub1 {
@@ -73,7 +85,21 @@ html {
     height: calc(400px - 10px);
     text-align: center;
 }
+@media only screen and (max-width: 667px) {
+    #secgrid2{
+       display: inline-block;
+       grid-template-columns: 1fr, 1fr, 1fr;
+    }
 
+    #sec2 h2{
+        padding-top: 2px;
+    }
+
+    #sec2 p{
+        padding-bottom: 20px;
+    }
+    
+}
 #sec2 h4,p {
     font-size: 1.2rem;
 }
@@ -104,6 +130,7 @@ html {
 .ourwork p{
     padding-bottom: 5vh;
 }
+
 
 #row {
     display:grid; 
@@ -136,20 +163,10 @@ html {
     width: 100%;
   }
   
-
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
+  @media only screen and (max-width: 667px) {
+    .ourwork {
+        display: none;
+    }    
   }
 
 /* OUR WORK SECTION END */
@@ -167,6 +184,7 @@ html {
     text-align: center;
     background-image:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(/IMAGES/CAR3.jpg);
     background-position: center;
+    background-repeat: no-repeat;
     height: 300px;
     color: white;
 }
@@ -185,6 +203,7 @@ html {
 #us h2 {
     margin-top: 50px;
     color: black;
+    text-decoration: underline;
 }
 
 #us {
@@ -193,8 +212,9 @@ html {
     text-align: center;
     background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(/IMAGES/paper.jpg);
     background-position: center;
+    background-repeat: no-repeat;
     height: 50rem;
-    color: white;
+    width: 100%;
 }
 
 #us p{
@@ -217,6 +237,27 @@ html {
 
 
 
+@media only screen and (max-width: 1200px) {
+    #usbox {
+     display: grid;
+     grid-template-columns: 1fr;
+     background-color: rgb(245, 244, 233);
+     margin: 2vh;
+    }
+ 
+ }
+
+ @media only screen and (max-width: 667px) {
+    #usbox {
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+    margin-left: 0vh;
+    margin-right: 0vh;
+      
+    }    
+  }
+
+ 
 /* ABOUT US SECTION 2 */
 
 
@@ -238,10 +279,12 @@ html {
 
 #findus {
     text-align: center;
-    background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(/IMAGES/leather.jpg);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(/IMAGES/repair.jpg);
     background-position: center;
-    height: 50rem;
+    background-repeat: no-repeat;
+    height: 500px;
     color: white;
+    padding-top: 20vh;
 }
 
 #findgrid {
@@ -250,13 +293,52 @@ html {
     align-content: center;
     background-color: white; 
     color: black;
-    margin-top: 20vh;
-    margin-bottom: 20vh;
+    margin-bottom: 5vh;
     margin-left: 40vh;
     margin-right: 40vh;
+    padding-top: 50px;
 }
 
+#message {
+    height: 50px;
+    width: 40vh;
+}
 
+#button {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+    #findgrid{
+    margin-bottom: 0vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    padding: 10px;
+    margin-top: 100px;
+    }
+
+    #message{
+        width: 30vh;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    #button{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: rgb(36, 36, 36);
+        color: white;
+    }
+
+}
 
 
 /* FIND US ENDING */
@@ -267,3 +349,33 @@ footer {
     background-color: #363636;
 }
 
+.socialfoot {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* MEDIA QUERIES */
+
+
+  @media only screen and (max-width: 600px) {
+
+
+  }
+
+
+@media only screen and (min-width: 600px) {
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+
+}
+
+
+@media only screen and (min-width: 992px) {
+
+
+}
