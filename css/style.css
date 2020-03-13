@@ -208,7 +208,7 @@ html {
 #usbox {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: white;
+    background-color: rgb(245, 244, 233);
     margin-top: 20vh;
     margin-bottom: 20vh;
     margin-left: 40vh;
@@ -220,9 +220,47 @@ html {
 /* ABOUT US SECTION 2 */
 
 
-#findus {
-    background-color: #757575;
+
+/* REPAIR PICTURE */
+
+.repairpic img{
+    width: 100%;
+    height: 100vh;
 }
+
+/*REPAIR PICTURE END */
+
+
+/* FIND US */
+#findus {
+    background-color: white;
+}
+
+#findus {
+    text-align: center;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(/IMAGES/leather.jpg);
+    background-position: center;
+    height: 50rem;
+    color: white;
+}
+
+#findgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    background-color: white; 
+    color: black;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    margin-left: 40vh;
+    margin-right: 40vh;
+}
+
+
+
+
+/* FIND US ENDING */
+
 
 
 footer {
