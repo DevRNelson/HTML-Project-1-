@@ -64,11 +64,11 @@ html {
     padding-top: 450px;
 }
 
-@media (max-width: 767.98px)) {
+@media (max-width: 767.98px) {
     #sec1 {
         height: 800px;
     }    
-  
+
     #socialm{
         padding-top: 200px;
     }
