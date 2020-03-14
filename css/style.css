@@ -14,7 +14,7 @@ html {
     width: 100%;
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .topnav a {
@@ -29,12 +29,12 @@ html {
     color: #a5a5a5;
 }
 
-@media only screen and (max-width: 667px) {
+@media (max-width: 767.98px){
     .topnav a 
     {
         display:block;
         padding:5px 0;
-        border-bottom:  1px #fff dotted;
+        border-bottom:  2px #fff underlin;
     }
 }
 
@@ -48,11 +48,6 @@ html {
     
 }
 
-@media only screen and (max-width: 667px) {
-  #sec1 {
-      height: 500px;
-  }    
-}
 
 #secsub1 {
     padding-top: 350px;
@@ -68,13 +63,17 @@ html {
     padding-top: 450px;
 }
 
-.underline
-{
-    width:50px;
-    height:3 px;
-    background-color:black;
-    margin: 0 auto;
-}
+@media (max-width: 767.98px)) {
+    #sec1 {
+        height: 800px;
+    }    
+  
+    #socialm{
+        padding-top: 200px;
+    }
+  }
+
+
 
 #sec2 {
     background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(/IMAGES/leather.jpg);
@@ -98,7 +97,7 @@ html {
     height: calc(400px - 10px);
     text-align: center;
 }
-@media only screen and (max-width: 667px) {
+@media (max-width: 767.98px) {
     #secgrid2{
        display: inline-block;
        grid-template-columns: 1fr, 1fr, 1fr;
@@ -137,7 +136,6 @@ html {
     border-bottom: 1px;
     margin-top: 5vh;
     font-size: xx-large;
-    text-decoration: underline;
 }
 
 .ourwork p{
@@ -175,8 +173,17 @@ html {
     vertical-align: middle;
     width: 100%;
   }
+
   
-  @media only screen and (max-width: 667px) {
+.underline
+{
+    width:50px;
+    height: 3px;
+    background-color:black;
+    margin: 0 auto;
+}
+  
+@media (max-width: 767.98px) {
     .ourwork {
         display: none;
     }    
@@ -185,21 +192,12 @@ html {
 /* OUR WORK SECTION END */
 
 
-/* ABOUT US SECTION  1 */ 
-
-
-
-
-/* ABOUT US SECRTION 1 END */
-
-
 
 /* ABOUT US SECTION 2 */
 
 #us h2 {
     margin-top: 50px;
     color: black;
-    text-decoration: underline;
 }
 
 #us {
@@ -209,7 +207,7 @@ html {
     background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(/IMAGES/paper.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    height: 50rem;
+    height: 800px;
     width: 100%;
 }
 
@@ -218,7 +216,7 @@ html {
     margin-bottom: 5vh;
     color: black;
     text-align: center;
-    padding: 10vh;
+    margin-top: 50px;
 }
 
 #usbox {
@@ -231,24 +229,27 @@ html {
     margin-right: 40vh;
 }
 
+.usunderline
+{
+    width:50px;
+    height: 3px;
+    background-color:black;
+    margin: 0 auto;
+}
 
-
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1199.98px)  {
     #usbox {
      display: grid;
      grid-template-columns: 1fr;
      background-color: rgb(245, 244, 233);
-     margin: 2vh;
+     margin: 5vh;
     }
  
  }
 
- @media only screen and (max-width: 667px) {
+ @media (max-width: 767.98px) {
     #usbox {
-    margin-top: 0vh;
-    margin-bottom: 0vh;
-    margin-left: 0vh;
-    margin-right: 0vh;
+    margin: 2vh;
       
     }    
   }
@@ -278,7 +279,7 @@ html {
     background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(/IMAGES/repair.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 700px;
     color: white;
     padding-top: 20vh;
 }
@@ -292,6 +293,7 @@ html {
     margin-bottom: 5vh;
     margin-left: 40vh;
     margin-right: 40vh;
+    margin-top: 40px;
     padding-top: 50px;
 }
 
@@ -310,13 +312,16 @@ html {
     margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 1200px) {
+#button :active{
+    background-color: rgb(53, 53, 53);
+}
+
+@media (max-width: 1199.98px) {
     #findgrid{
     margin-bottom: 0vh;
     margin-left: 2vh;
     margin-right: 2vh;
     padding: 10px;
-    margin-top: 100px;
     }
 
     #message{
@@ -324,7 +329,7 @@ html {
     }
 }
 
-@media only screen and (max-width: 667px) {
+@media  (min-width: 576px) and (max-width: 767.98px)  {
     #button{
         padding-left: 20px;
         padding-right: 20px;
@@ -339,8 +344,6 @@ html {
 
 /* FIND US ENDING */
 
-
-
 footer {
     background-color: #363636;
 }
@@ -352,26 +355,16 @@ footer {
 }
 
 /* MEDIA QUERIES */
+@media (max-width: 575.98px) { ... }
 
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
 
-  @media only screen and (max-width: 600px) {
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
 
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
 
-  }
-
-
-@media only screen and (min-width: 600px) {
-
-
-}
-
-@media only screen and (min-width: 768px) {
-
-
-}
-
-
-@media only screen and (min-width: 992px) {
-
-
-}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ...
